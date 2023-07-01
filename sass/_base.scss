@@ -1,0 +1,48 @@
+$color-red: hsl(0, 100%, 74%);
+$color-green: hsl(154, 59%, 51%);
+$color-blue: hsl(248, 32%, 49%);
+$color-dark-blue: hsl(249, 10%, 26%);
+$color-grayish-blue: hsl(246, 25%, 77%);
+$font-display: "Poppins", sans-serif;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  @media (max-width: 60em) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.6;
+
+  font-family: $font-display;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: $color-red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 20px);
+  @media (max-width: 50em) {
+    flex-direction: column;
+    padding: 10rem 0;
+  }
+}
